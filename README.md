@@ -50,7 +50,33 @@ The agent can perform calculations, retrieve date and time, search Wikipedia, an
 - **API:** Ollama local chat API
 - **Response Type:** Streaming
 
-Example:
 
-```text
+## Setup
+
+1. Install Python 3.10+.
+2. Install dependencies:
+
+pip install -r requirements.txt
+
+
+3. Install Ollama and start it:
+
+ollama serve
+
+
+4. Pull a model, for example:
+
 ollama pull llama3.2
+
+
+5. Start Nova:
+
+streamlit run app.py
+
+
+Open the local Streamlit URL shown in the terminal.
+
+## Extending it
+
+The TOOLS dictionary in agent.py is the extension point for adding RAG,
+custom APIs, database search, file retrieval, or specialized AI agents.
