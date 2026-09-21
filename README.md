@@ -1,8 +1,8 @@
-Nova AI — Local AI Agent & Chatbot
+## Nova AI — Local AI Agent & Chatbot
 
 A modern local-first AI chatbot and agent application built with **Python, Streamlit, and Ollama**.
 
-##📘 Overview
+## 📘 Overview
 
 Nova AI is a local AI assistant that allows users to interact with Large Language Models (LLMs) running through Ollama.
 
@@ -56,17 +56,17 @@ The agent can perform calculations, retrieve date and time, search Wikipedia, an
 1. Install Python 3.10+.
 2. Install dependencies:
 
-pip install -r requirements.txt
+ pip install -r requirements.txt
 
 
 3. Install Ollama and start it:
 
-ollama serve
+ ollama serve
 
 
 4. Pull a model, for example:
 
-ollama pull llama3.2
+ ollama pull llama3.2
 
 
 5. Start Nova:
