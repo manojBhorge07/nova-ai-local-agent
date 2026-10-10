@@ -7,11 +7,21 @@ Nova AI is a local-first conversational AI application built with **Python, Stre
 The project demonstrates how to integrate a language model with external tools through an agent loop, maintain conversation context during a session, and build an interactive AI application with a custom user interface.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/Streamlit-UI-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit">
-  <img src="https://img.shields.io/badge/Ollama-Local%20LLMs-black?style=for-the-badge" alt="Ollama">
-  <img src="https://img.shields.io/badge/AI-Tool--Using%20Agent-7C5CFF?style=for-the-badge" alt="AI Agent">
-  <img src="https://img.shields.io/badge/Status-Portfolio%20Project-blue?style=for-the-badge" alt="Project Status">
+  <a href="https://www.python.org/" target="_blank">
+    <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  </a>
+  <a href="https://streamlit.io/" target="_blank">
+    <img src="https://img.shields.io/badge/Streamlit-UI-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit">
+  </a>
+  <a href="https://ollama.com/" target="_blank">
+    <img src="https://img.shields.io/badge/Ollama-Local%20LLMs-black?style=for-the-badge" alt="Ollama">
+  </a>
+  <a href="https://docs.python.org/3/library/ast.html" target="_blank">
+    <img src="https://img.shields.io/badge/AI-Tool--Using%20Agent-7C5CFF?style=for-the-badge" alt="AI Tool-Using Agent">
+  </a>
+  <a href="https://github.com/manojBhorge07" target="_blank">
+    <img src="https://img.shields.io/badge/Status-Portfolio%20Project-blue?style=for-the-badge" alt="Portfolio Project">
+  </a>
 </p>
 
 ---
