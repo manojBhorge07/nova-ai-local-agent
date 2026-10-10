@@ -465,57 +465,6 @@ The application does not implement authentication, authorization, persistent aud
 
 ---
 
-## ⚠️ Current Limitations
-
-The following are known limitations based on the current implementation:
-
-1. **Model discovery:** The model-discovery function uses an invalid URL. The Ollama tags endpoint should be used instead.
-2. **Fallback model names:** The fallback list may include models that are not installed on the user's machine.
-3. **Untrusted HTML rendering:** Assistant output is inserted into HTML without adequate sanitization.
-4. **Unrestricted web destinations:** The web-fetch tool can request destinations that should be blocked in a secure deployment.
-5. **Basic tool protocol:** Tool calls use a custom text format rather than schema-validated native function calling.
-6. **Session-only memory:** Conversation history is not persisted after the active session is cleared or lost.
-7. **Limited observability:** Tool results are stored as events but are not fully presented in the conversation interface.
-8. **No formal evaluation suite:** The project does not include automated agent tests, tool accuracy benchmarks, or a systematic response-quality evaluation.
-9. **Model-dependent behavior:** Tool selection, formatting, reasoning quality, and response speed vary by model and hardware.
-10. **External service dependency:** Wikipedia and web fetching require internet access, even though text generation runs locally.
-
-These limitations should be addressed before treating the application as a production-ready assistant.
-
----
-
-## 🚀 Future Improvements
-
-### Agent and Model Improvements
-- Replace the text-based protocol with structured tool calls and JSON-schema validation.
-- Improve model discovery using Ollama's `/api/tags` endpoint.
-- Add tool-specific retries, timeouts, and structured error responses.
-- Improve cancellation and user-visible streaming.
-- Add model capability checks and clearer handling of missing models.
-
-### Security and Reliability
-- Add URL allowlists and SSRF protections.
-- Sanitize model output and render it through a safe Markdown pipeline.
-- Add strict calculator resource limits.
-- Validate every tool argument before execution.
-- Add automated unit and integration tests.
-
-### Advanced AI Capabilities
-- Add RAG for local PDFs, DOCX files, and other documents.
-- Implement vector search and source citations.
-- Add conversation export and persistent chat storage.
-- Add configurable system prompts and per-tool permissions.
-- Explore LangChain, LangGraph, or a custom multi-agent workflow.
-
-### Product and UI Improvements
-- Display tool results and sources in the chat interface.
-- Add a model-management and health-check screen.
-- Add chat history, search, rename, and delete controls.
-- Provide usage analytics and request-duration metrics.
-- Add Docker-based deployment and environment-specific configuration.
-
----
-
 ## 🛠 Troubleshooting
 
 ### Ollama is not detected
